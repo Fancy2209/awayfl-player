@@ -74,6 +74,11 @@ module.exports = {
 			rt_title: "text_test",
 			rt_filename: "text_test",
 			rt_stageScaleMode: "showAll",
+		},
+		{
+			rt_title: "HelloTriangleColored",
+			rt_filename: "HelloTriangleColored",
+			rt_stageScaleMode: "noScale",
 		}
 	],
 
