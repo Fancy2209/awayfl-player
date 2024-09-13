@@ -20,3 +20,4 @@ npm-debug.log
 # Misc
 deploy_key
 deploy_key.pub
+.vscode/settings.json
