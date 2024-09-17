@@ -79,6 +79,11 @@ module.exports = {
 			rt_title: "HelloTriangleColored",
 			rt_filename: "HelloTriangleColored",
 			rt_stageScaleMode: "noScale",
+		},
+		{
+			rt_title: "StarlingSample",
+			rt_filename: "StarlingSample",
+			rt_stageScaleMode: "noScale",
 		}
 	],
 
