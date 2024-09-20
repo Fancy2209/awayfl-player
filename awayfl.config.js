@@ -86,6 +86,11 @@ module.exports = {
 			rt_stageScaleMode: "noScale",
 		},
 		{
+			rt_title: "Away3D Basic View",
+			rt_filename: "Away3D_Basic_View",
+			rt_stageScaleMode: "noScale",
+		},
+		{
 			rt_title: "AwayFL 3D Logo",
 			rt_filename: "AFLLogo",
 			rt_stageScaleMode: "noScale",
