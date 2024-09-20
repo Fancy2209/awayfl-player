@@ -82,7 +82,12 @@ module.exports = {
 		},
 		{
 			rt_title: "StarlingSample",
-			rt_filename: "StarlingSample",
+			rt_filename: "Starling_Demo_Web",
+			rt_stageScaleMode: "noScale",
+		},
+		{
+			rt_title: "AwayFL 3D Logo",
+			rt_filename: "AFLLogo",
 			rt_stageScaleMode: "noScale",
 		}
 	],
