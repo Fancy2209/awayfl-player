@@ -97,7 +97,7 @@ module.exports = (env = {}) => {
 				progress: true,
 			},
 			allowedHosts: "all",
-			port: 80,
+			port: 8080,
 		},
 		optimization: {
 			//minimize: false // wp4

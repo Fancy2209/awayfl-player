@@ -81,8 +81,23 @@ module.exports = {
 			rt_stageScaleMode: "noScale",
 		},
 		{
-			rt_title: "StarlingSample",
+			rt_title: "Starling 2.7 Demo",
 			rt_filename: "Starling_Demo_Web",
+			rt_stageScaleMode: "noScale",
+		},
+		{
+			rt_title: "Starling 1.7 Demo",
+			rt_filename: "Starling17Demo",
+			rt_stageScaleMode: "noScale",
+		},
+		{
+			rt_title: "Nambers",
+			rt_filename: "nambers",
+			rt_stageScaleMode: "noScale",
+		},
+		{
+			rt_title: "fpa-world-1-remix",
+			rt_filename: "fpa-world-1-remix",
 			rt_stageScaleMode: "noScale",
 		},
 		{
