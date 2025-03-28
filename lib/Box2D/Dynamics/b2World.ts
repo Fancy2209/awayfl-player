@@ -783,7 +783,7 @@ export class b2World {
 			const userData: any = broadPhase.GetUserData(proxy);
 			const fixture: b2Fixture = userData as b2Fixture;
 			const hit: boolean = fixture.RayCast(output, input);
-			if (hit) {
+			if (hit && !fixture.IsSensor()) {
 				const fraction: number = output.fraction;
 				const point: b2Vec2 = new b2Vec2(
 					(1.0 - fraction) * point1.x + fraction * point2.x,
@@ -798,9 +798,13 @@ export class b2World {
 
 	public RayCastOne(point1: b2Vec2, point2: b2Vec2): b2Fixture {
 		let result: b2Fixture;
+		let best: number = Number.MAX_VALUE;
 		function RayCastOneWrapper(fixture: b2Fixture, point: b2Vec2, normal: b2Vec2, fraction: number): number {
-			result = fixture;
-			return fraction;
+			if (fraction <= best) {
+				best = fraction;
+				result = fixture;
+			}
+			return best;
 		}
 		this.RayCast(RayCastOneWrapper, point1, point2);
 		return result;
@@ -1417,15 +1421,15 @@ export class b2World {
 
 	// These two are stored purely for efficiency purposes, they don't maintain
 	// any data outside of a call to Step
-	private m_contactSolver: b2ContactSolver = new b2ContactSolver();
-	private m_island: b2Island = new b2Island();
+	public m_contactSolver: b2ContactSolver = new b2ContactSolver();
+	public m_island: b2Island = new b2Island();
 
 	public m_bodyList: b2Body;
 	private m_jointList: b2Joint;
 
 	public m_contactList: b2Contact;
 
-	private m_bodyCount: number /** int */;
+	public m_bodyCount: number /** int */;
 	public m_contactCount: number /** int */;
 	private m_jointCount: number /** int */;
 	private m_controllerList: b2Controller;
@@ -1436,7 +1440,7 @@ export class b2World {
 
 	public m_groundBody: b2Body;
 
-	private m_destructionListener: b2DestructionListener;
+	public m_destructionListener: b2DestructionListener;
 	private m_debugDraw: b2DebugDraw;
 
 	// This is used to compute the time step ratio to support a variable time step.
