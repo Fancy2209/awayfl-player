@@ -86,8 +86,8 @@ module.exports = {
 			rt_stageScaleMode: "noScale",
 		},
 		{
-			rt_title: "Starling 1.7 Demo",
-			rt_filename: "Starling17Demo",
+			rt_title: "Starling 1.8 Demo",
+			rt_filename: "Starling1Demo",
 			rt_stageScaleMode: "noScale",
 		},
 		{
