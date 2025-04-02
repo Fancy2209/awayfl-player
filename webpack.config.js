@@ -72,7 +72,8 @@ module.exports = (env = {}) => {
 		stats: {
 			cached: true, // wp4
 			errorDetails: true, // wp4
-			colors: true // wp4
+			colors: true, // wp4
+			warningsFilter: /export .* was not found in/
 		},
 		devServer: {
 			client: {
