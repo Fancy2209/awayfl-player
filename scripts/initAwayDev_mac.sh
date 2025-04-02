@@ -8,25 +8,23 @@ echo [32m Cloning "@awayjs" modules from Github[0m
 
 mkdir @awayjs
 cd @awayjs
-git clone https://github.com/awayjs/core.git
-git clone https://github.com/awayjs/graphics.git
-git clone https://github.com/awayjs/scene.git
-git clone https://github.com/awayjs/stage.git
-git clone https://github.com/awayjs/renderer.git
-git clone https://github.com/awayjs/materials.git
-git clone https://github.com/awayjs/view.git
-git clone https://github.com/awayjs/arcade.git
+git clone https://github.com/awayjs/core.git --depth=1 -b dev
+git clone https://github.com/awayjs/graphics.git --depth=1 -b dev
+git clone https://github.com/awayjs/scene.git --depth=1 -b dev
+git clone https://github.com/Fancy2209/stage.git --depth=1 -b Stage3D
+git clone https://github.com/awayjs/renderer.git --depth=1 -b dev
+git clone https://github.com/awayjs/materials.git --depth=1 -b dev
+git clone https://github.com/awayjs/view.git --depth=1 -b dev
+git clone https://github.com/awayjs/arcade.git --depth=1 -b dev
 
 echo [32m Checkout and link "@awayjs/core" module[0m
 cd core
-git checkout dev
 yarn
 yarn link
 cd ..
 
 echo [32m Checkout and link "@awayjs/stage" module[0m
 cd stage
-git checkout dev
 yarn
 yarn link
 yarn link @awayjs/core
@@ -34,7 +32,6 @@ cd ..
 
 echo [32m Checkout and link "@awayjs/view" module[0m
 cd view
-git checkout dev
 yarn
 yarn link
 yarn link @awayjs/core
@@ -43,7 +40,6 @@ cd ..
 
 echo [32m Checkout and link "@awayjs/renderer" module[0m
 cd renderer
-git checkout dev
 yarn
 yarn link
 yarn link @awayjs/core
@@ -53,7 +49,6 @@ cd ..
 
 echo [32m Checkout and link "@awayjs/graphics" module[0m
 cd graphics
-git checkout dev
 yarn
 yarn link
 yarn link @awayjs/core
@@ -64,7 +59,6 @@ cd ..
 
 echo [32m Checkout and link "@awayjs/materials" module[0m
 cd materials
-git checkout dev
 yarn
 yarn link
 yarn link @awayjs/core
@@ -75,7 +69,6 @@ cd ..
 
 echo [32m Checkout and link "@awayjs/scene" module[0m
 cd scene
-git checkout dev
 yarn
 yarn link
 yarn link @awayjs/core
@@ -88,7 +81,6 @@ cd ..
 
 echo [32m Checkout and link "@awayjs/arcade" module[0m
 cd arcade
-git checkout dev
 yarn
 yarn link
 cd ..
@@ -99,14 +91,13 @@ echo [32m Cloning "@awayfl" modules from Github[0m
 
 mkdir @awayfl
 cd @awayfl
-git clone https://github.com/awayfl/swf-loader.git
-git clone https://github.com/awayfl/avm1.git
-git clone https://github.com/awayfl/avm2.git
-git clone https://github.com/awayfl/playerglobal.git
+git clone https://github.com/Fancy2209/swf-loader.git  --depth=1 -b Stage3D
+git clone https://github.com/awayfl/avm1.git  --depth=1 -b dev
+git clone https://github.com/awayfl/avm2.git  --depth=1 -b dev
+git clone https://github.com/Fancy2209/playerglobal.git  --depth=1 -b stage3d
 
 echo [32m Checkout and link "@awayfl/swf-loader" module[0m
 cd swf-loader
-git checkout dev
 yarn
 yarn link
 yarn link @awayjs/core
@@ -120,7 +111,6 @@ cd ..
 
 echo [32m Checkout and link "@awayfl/avm1" module[0m
 cd avm1
-git checkout dev
 yarn
 yarn link
 yarn link @awayjs/core
@@ -135,7 +125,6 @@ cd ..
 
 echo [32m Checkout and link "@awayfl/avm2" module[0m
 cd avm2
-git checkout dev
 yarn
 yarn link
 yarn link @awayjs/core
@@ -150,7 +139,6 @@ cd ..
 
 echo [32m Checkout and link "@awayfl/playerglobal" module[0m
 cd playerglobal
-git checkout dev
 yarn
 yarn link
 yarn link @awayjs/core
@@ -167,7 +155,6 @@ cd ..
 echo [32m Checkout and link "awayfl-player" module[0m
 cd ..
 cd awayfl-player
-git checkout dev
 yarn
 yarn link
 yarn link @awayjs/core
