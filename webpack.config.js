@@ -93,7 +93,7 @@ module.exports = (env = {}) => {
 			},
 			open: false,
 			hot: false,
-			watchFiles: ['src/**/*.*'],
+			watchFiles: ['src/**/*.*', "node_modules/@awayjs/**/*.*", "node_modules/@awayfl/**/*.*"],
 			client: {
 				progress: true,
 			},

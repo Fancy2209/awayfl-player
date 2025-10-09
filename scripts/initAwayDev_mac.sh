@@ -8,14 +8,14 @@ echo [32m Cloning "@awayjs" modules from Github[0m
 
 mkdir @awayjs
 cd @awayjs
-git clone https://github.com/awayjs/core.git --depth=1 -b dev
-git clone https://github.com/awayjs/graphics.git --depth=1 -b dev
-git clone https://github.com/awayjs/scene.git --depth=1 -b dev
-git clone https://github.com/Fancy2209/stage.git --depth=1 -b Stage3D
-git clone https://github.com/awayjs/renderer.git --depth=1 -b dev
-git clone https://github.com/awayjs/materials.git --depth=1 -b dev
-git clone https://github.com/awayjs/view.git --depth=1 -b dev
-git clone https://github.com/awayjs/arcade.git --depth=1 -b dev
+git clone https://github.com/awayjs/core.git -b dev
+git clone https://github.com/awayjs/graphics.git -b dev
+git clone https://github.com/awayjs/scene.git -b dev
+git clone https://github.com/Fancy2209/stage.git -b Stage3D
+git clone https://github.com/awayjs/renderer.git -b dev
+git clone https://github.com/awayjs/materials.git -b dev
+git clone https://github.com/awayjs/view.git -b dev
+git clone https://github.com/awayjs/arcade.git -b dev
 
 echo [32m Checkout and link "@awayjs/core" module[0m
 cd core
@@ -91,10 +91,10 @@ echo [32m Cloning "@awayfl" modules from Github[0m
 
 mkdir @awayfl
 cd @awayfl
-git clone https://github.com/Fancy2209/swf-loader.git  --depth=1 -b Stage3D
-git clone https://github.com/awayfl/avm1.git  --depth=1 -b dev
-git clone https://github.com/awayfl/avm2.git  --depth=1 -b dev
-git clone https://github.com/Fancy2209/playerglobal.git  --depth=1 -b stage3d
+git clone https://github.com/Fancy2209/swf-loader.git -b Stage3D
+git clone https://github.com/awayfl/avm1.git -b dev
+git clone https://github.com/awayfl/avm2.git -b dev
+git clone https://github.com/Fancy2209/playerglobal.git -b stage3d
 
 echo [32m Checkout and link "@awayfl/swf-loader" module[0m
 cd swf-loader

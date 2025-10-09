@@ -41,7 +41,7 @@ module.exports = {
 
 	rt_stageScaleMode:null, // allowed values: EXACT_FIT noBorder noScale showAll
 	rt_stageAlign:null, // allowed values: B BL BR L R T TL TR
-	
+
 	rt_progressParserWeigth: 1,	// 	weight of parser in reporter - can be ommited or set to 0 aswell
 
 	// properties for progress bar
@@ -101,13 +101,148 @@ module.exports = {
 			rt_stageScaleMode: "noScale",
 		},
 		{
-			rt_title: "Away3D Basic View",
-			rt_filename: "Away3D_Basic_View",
+			rt_title: "AwayFL 3D Logo",
+			rt_filename: "AFLLogo",
 			rt_stageScaleMode: "noScale",
 		},
 		{
-			rt_title: "AwayFL 3D Logo",
-			rt_filename: "AFLLogo",
+			rt_title: "Away3D_Basic_Fire",
+			rt_filename: "Basic_Fire",
+			rt_stageScaleMode: "noScale",
+		},
+		{
+			rt_title: "Away3D_Basic_Load3DS",
+			rt_filename: "Basic_Load3DS",
+			rt_stageScaleMode: "noScale",
+		},
+		{
+			rt_title: "Away3D_Basic_Particles",
+			rt_filename: "Basic_Particles",
+			rt_stageScaleMode: "noScale",
+		},
+		{
+			rt_title: "Away3D_Basic_Shading",
+			rt_filename: "Basic_Shading",
+			rt_stageScaleMode: "noScale",
+		},
+		{
+			rt_title: "Away3D_Basic_SkyBox",
+			rt_filename: "Basic_SkyBox",
+			rt_stageScaleMode: "noScale",
+		},
+		{
+			rt_title: "Away3D_Basic_SpriteSheetAnimation",
+			rt_filename: "Basic_SpriteSheetAnimation",
+			rt_stageScaleMode: "noScale",
+		},
+		{
+			rt_title: "Away3D_Basic_Stereo",
+			rt_filename: "Basic_Stereo",
+			rt_stageScaleMode: "noScale",
+		},
+		{
+			rt_title: "Away3D_Basic_Tweening3D",
+			rt_filename: "Basic_Tweening3D",
+			rt_stageScaleMode: "noScale",
+		},
+		{
+			rt_title: "Away3D_Basic_UVAnimation",
+			rt_filename: "Basic_UVAnimation",
+			rt_stageScaleMode: "noScale",
+		},
+		{
+			rt_title: "Away3D_Basic_View",
+			rt_filename: "Basic_View",
+			rt_stageScaleMode: "noScale",
+		},
+		{
+			rt_title: "Away3D_Intermediate_Globe",
+			rt_filename: "Intermediate_Globe",
+			rt_stageScaleMode: "noScale",
+		},
+		{
+			rt_title: "Away3D_Intermediate_Head",
+			rt_filename: "Intermediate_Head",
+			rt_stageScaleMode: "noScale",
+		},
+		{
+			rt_title: "Away3D_Intermediate_LightProbes",
+			rt_filename: "Intermediate_LightProbes",
+			rt_stageScaleMode: "noScale",
+		},
+		{
+			rt_title: "Away3D_Intermediate_MD5Animation",
+			rt_filename: "Intermediate_MD5Animation",
+			rt_stageScaleMode: "noScale",
+		},
+		{
+			rt_title: "Away3D_Intermediate_MonsterHeadShading",
+			rt_filename: "Intermediate_MonsterHeadShading",
+			rt_stageScaleMode: "noScale",
+		},
+		{
+			rt_title: "Away3D_Intermediate_MouseInteraction",
+			rt_filename: "Intermediate_MouseInteraction",
+			rt_stageScaleMode: "noScale",
+		},
+		{
+			rt_title: "Away3D_Intermediate_OnkbaAWDAnimation",
+			rt_filename: "Intermediate_OnkbaAWDAnimation",
+			rt_stageScaleMode: "noScale",
+		},
+		{
+			rt_title: "Away3D_Intermediate_ParticleExplosions",
+			rt_filename: "Intermediate_ParticleExplosions",
+			rt_stageScaleMode: "noScale",
+		},
+		{
+			rt_title: "Away3D_Intermediate_ParticleTrails",
+			rt_filename: "Intermediate_ParticleTrails",
+			rt_stageScaleMode: "noScale",
+		},
+		{
+			rt_title: "Away3D_Intermediate_PerelithKnightMD2",
+			rt_filename: "Intermediate_PerelithKnightMD2",
+			rt_stageScaleMode: "noScale",
+		},
+		{
+			rt_title: "Away3D_Intermediate_PlanarReflections",
+			rt_filename: "Intermediate_PlanarReflections",
+			rt_stageScaleMode: "noScale",
+		},
+		{
+			rt_title: "Away3D_Intermediate_PolarBearAWDAnimation",
+			rt_filename: "Intermediate_PolarBearAWDAnimation",
+			rt_stageScaleMode: "noScale",
+		},
+		{
+			rt_title: "Away3D_Intermediate_RealTimeEnvMap",
+			rt_filename: "Intermediate_RealTimeEnvMap",
+			rt_stageScaleMode: "noScale",
+		},
+		{
+			rt_title: "Away3D_Intermediate_SpriteSheetAnimation",
+			rt_filename: "Intermediate_SpriteSheetAnimation",
+			rt_stageScaleMode: "noScale",
+		},
+		{
+			rt_title: "Away3D_Advanced_FractalTreeDemo",
+			rt_filename: "Advanced_FractalTreeDemo",
+			rt_stageScaleMode: "noScale",
+		},
+		{
+			rt_title: "Away3D_Advanced_MultiPassSponzaDemo",
+			rt_filename: "Advanced_MultiPassSponzaDemo",
+			rt_stageScaleMode: "noScale",
+		},
+		{
+			rt_title: "Away3D_Advanced_ShallowWaterDemo",
+			rt_filename: "Advanced_ShallowWaterDemo",
+			rt_stageScaleMode: "noScale",
+		},
+		{
+			rt_title: "Away3D_Advanced_TerrainDemo",
+			rt_filename: "Advanced_TerrainDemo",
 			rt_stageScaleMode: "noScale",
 		}
 	],
