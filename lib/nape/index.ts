@@ -18,12 +18,20 @@ nape.geom.Vec2.prototype.toPoint = function(output:any) {
     return output;
 }
 
+//add fromPoint
+//@ts-ignore
+nape.geom.Vec2.fromPoint = function(point:any, param2:Boolean = false) {
+    const output = new nape.geom.Vec2();
+    output.x = point.x;
+    output.y = point.y;
+    return output;
+}
+
+
 nape.geom.GeomPoly = class _NewGeomPoly extends nape.geom.GeomPoly {
     constructor(v: any) {
         //@ts-ignore
-        if (v?._buffer)
-            v = v._buffer;
-
+        v = v.value ? v.value: v;
         super(v);
     }
 }
@@ -32,15 +40,14 @@ nape.geom.GeomPoly = class _NewGeomPoly extends nape.geom.GeomPoly {
 nape.callbacks.InteractionCallback.axIsType = function(x: any): boolean {
     return x instanceof this;
 }
- 
 
-// nape.shape.Polygon = class _NewPolygon extends nape.shape.Polygon {
-//     constructor(v: any, m: any, f: any) {
-//         //@ts-ignore
-//         v = v.value ? v.value: v;
-//         super(v, m, f);
-//     }
-// }
+nape.shape.Polygon = class _NewPolygon extends nape.shape.Polygon {
+    constructor(v: any, m: any, f: any) {
+        //@ts-ignore
+        v = v.value ? v.value: v;
+        super(v, m, f);
+    }
+}
 
 // const _add = zpp_nape.util.ZNPList_ZPP_InteractionListener.prototype.add;
 // zpp_nape.util.ZNPList_ZPP_InteractionListener.prototype.add = function(o: any): any {
